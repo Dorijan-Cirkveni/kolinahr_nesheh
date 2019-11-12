@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="994b747e-0e49-4bd5-9e23-3f50c0251804" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/gameSolver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CNF.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CNF.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/solver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sudoku.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sudoku.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/util.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,13 +18,14 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1QToHowHNT7JWckWNlHsuGwmjA6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -71,6 +66,7 @@
       <workItem from="1572817211911" duration="877000" />
       <workItem from="1572968613300" duration="63000" />
       <workItem from="1573550475777" duration="1226000" />
+      <workItem from="1573573653885" duration="68000" />
     </task>
     <servers />
   </component>

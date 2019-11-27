@@ -133,7 +133,7 @@ class ClauseSet(Comparable):
     def __init__(self, clauses=None):
         if clauses is None:
             clauses = set()
-        self.clauses = set()
+        self.clauses: set = set()
         self.literals = set()
         self.hasLiteral = dict()
         for e in clauses:
@@ -183,7 +183,7 @@ class ClauseSet(Comparable):
 
     def positiveResolvedLiterals(self):
         bases = {e.base() for e in self.getPossibleLiterals()}
-        return {e for e in bases if Clause(e) in self.clauses}
+        return {e for e in bases if Clause(e) in self.clauses or Clause(e.negate) in self.clauses}
 
     def clausesSortedBy(self, Key=lambda x: len(x)):
         return sorted(self.clauses, key=Key)
@@ -225,6 +225,8 @@ class ClauseSet(Comparable):
         self.clauses.add(clause)
         if len(clause) == 1:
             self.resolveForAtom(min(clause.literals))
+        elif len(clause) == 0:
+            self.processContradiction()
         return 0
 
     def processContradiction(self):

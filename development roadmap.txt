@@ -1,5 +1,5 @@
 1.0 - Graphics user interface
-  1.1 - Data tab and menus
-  1.2 - Solver tab and menus
-  1.3 - Display and even more menus
+  1.1 - Data tab and menu/s (complete)
+  1.2 - Solver tab and menu/s
+  1.3 - Display and even more menu/s
   1.4 - Tooltips

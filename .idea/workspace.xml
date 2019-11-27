@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="994b747e-0e49-4bd5-9e23-3f50c0251804" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gui/gui_window.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/testCS_1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/gameSolver.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/development roadmap.txt" beforeDir="false" afterPath="$PROJECT_DIR$/development roadmap.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CNF.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CNF.py" afterDir="false" />
-    </list>
+    <list default="true" id="994b747e-0e49-4bd5-9e23-3f50c0251804" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +105,7 @@
       <workItem from="1574617152127" duration="1575000" />
       <workItem from="1574697146951" duration="665000" />
       <workItem from="1574785878099" duration="5247000" />
-      <workItem from="1574848147674" duration="7794000" />
+      <workItem from="1574848147674" duration="7855000" />
     </task>
     <servers />
   </component>

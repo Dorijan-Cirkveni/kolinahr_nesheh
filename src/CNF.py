@@ -133,14 +133,12 @@ class ClauseSet(Comparable):
     def __init__(self, clauses=None):
         if clauses is None:
             clauses = set()
+        self.solved = set()
         self.clauses: set = set()
         self.literals = set()
         self.hasLiteral = dict()
         for e in clauses:
-            if type(e) == Clause:
-                self.add(e)
-            else:
-                self.add(Clause(e))
+            self.add(e if type(e) == Clause else Clause(e))
         return
 
     def diff(self, other):
@@ -188,6 +186,21 @@ class ClauseSet(Comparable):
     def clausesSortedBy(self, Key=lambda x: len(x)):
         return sorted(self.clauses, key=Key)
 
+    def getLiteralCountFor(self, literal: Literal):
+        if literal not in self.literals:
+            return 0
+        s: set = self.hasLiteral[literal]
+        return len(s)
+
+    def getLiteralsByCount(self):
+        X = list(self.hasLiteral.keys())
+
+        def getKey(literal):
+            return len(self.hasLiteral[literal])
+
+        X.sort(key=getKey)
+        return X
+
     # Functions
     def remove(self, clause):
         if clause not in self.clauses:
@@ -222,11 +235,13 @@ class ClauseSet(Comparable):
                 if f.madeRedundantBy(clause):
                     X.add(f)
             [self.remove(f) for f in X]
-        self.clauses.add(clause)
         if len(clause) == 1:
-            self.resolveForAtom(min(clause.literals))
+            newsolved = min(clause.literals)
+            self.resolveForAtom(newsolved)
+            self.solved.add(newsolved)
         elif len(clause) == 0:
             self.processContradiction()
+        self.clauses.add(clause)
         return 0
 
     def processContradiction(self):

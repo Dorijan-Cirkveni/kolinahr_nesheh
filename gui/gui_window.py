@@ -3,6 +3,8 @@ import tkinter
 from tkinter import filedialog
 import threading
 
+import src
+from src import CNF
 from src.CNF import ClauseSet, Clause
 
 
@@ -117,7 +119,5 @@ def T(gui: gui_window):
 
 if __name__ == "__main__":
     X = gui_window("name")
-    A = threading.Thread(target=T, args=(X,))
-    A.start()
-    X.new(ClauseSet(["A", "B", "CvD"]))
+    X.new(ClauseSet([]))
     X.run()
